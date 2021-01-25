@@ -1,0 +1,12 @@
+<div class="container">
+    <h3 class="h3">All measures:</h3>
+        <table class="table">
+            {{#each measures}}
+                <tr>
+                    <td><p class="d-inline border-0 float-left">{{this.name}}</p></td>
+                    <td><a class="page-link d-inline border-0 float-right" href="edit/{{this.id}}">Edit</a></td>
+                    <td><button type="submit" class="btn-danger btn" onclick="return confirm('Are you sure you want to delete @ingredient.Name ingredient?')">Delete</button></td>
+                </tr>
+            {{/each}}
+        </table>
+</div>
